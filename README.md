@@ -1,4 +1,3 @@
-
 # Neargud Project BE
 
 This is the backend for the Neargud project. It is a RESTful API built using Express (Node.js) and integrates with a MongoDB database. The project supports various features such as user management, shop reviews, notifications, chat, reels, stories, campaigns, and more.
@@ -24,7 +23,7 @@ The API endpoints are defined in the `index.js` file and in the `routes` directo
 
 - **Admin Routes:**  
   – `/api/admin` – Admin dashboard endpoints.  
-  – `/api/admin/aboutUS` – Endpoints for managing “About Us” content.  
+  – `/api/admin/aboutUS` – Endpoints for managing "About Us" content.  
   – `/api/admin/policyAndPrivacy` – Endpoints for privacy and policy (admin).  
   – `/api/admin/termsAndConditions` – Endpoints for terms and conditions (admin).  
   – `/api/admin/campaign` – Endpoints for campaign management (admin).  
@@ -40,7 +39,7 @@ The API endpoints are defined in the `index.js` file and in the `routes` directo
   – `/api/user/post` – Endpoints for post (or feed) management.  
   – `/api/user/policyAndPrivacy` – Endpoints for privacy and policy (user).  
   – `/api/user/termsAndConditions` – Endpoints for terms and conditions (user).  
-  – `/api/user/aboutUs` – Endpoints for “About Us” (user).  
+  – `/api/user/aboutUs` – Endpoints for "About Us" (user).  
   – `/api/user/shopReviews` – Endpoints for shop reviews.  
   – `/api/user/faouriteCart` – Endpoints for favorite cart (or wishlist).  
   – `/api/user/notification` – Endpoints for notifications (user).  
@@ -52,5 +51,40 @@ The API endpoints are defined in the `index.js` file and in the `routes` directo
   – `/api/user/report` – Endpoints for reporting.  
   – `/api/user/campaign` – Endpoints for campaign (user).  
   – `/api/user/categories` – Endpoints for categories (user).
+
+## Project Structure
+
+```
+neargud/
+├── config/                 # Configuration files (database, environment, etc.)
+├── constants/             # Application constants and enums
+├── controllers/           # Route controllers (business logic)
+├── middleware/            # Custom middleware functions
+├── models/               # MongoDB models/schemas
+├── routes/               # API route definitions
+│   ├── adminRouter.js
+│   ├── userRouter.js
+│   ├── chatRouter.js
+│   ├── notificationRouter.js
+│   └── ... (other route files)
+├── utils/                # Utility functions and helpers
+├── cacheFiles/           # Cache storage directory
+├── index.js             # Application entry point
+├── package.json         # Project dependencies and scripts
+└── README.md            # Project documentation
+```
+
+Each directory serves a specific purpose:
+
+- **config/**: Contains configuration files for database connections, environment variables, and other app settings
+- **constants/**: Stores application-wide constants, enums, and configuration values
+- **controllers/**: Houses the business logic for each route, handling request processing and response generation
+- **middleware/**: Contains custom middleware functions for authentication, validation, error handling, etc.
+- **models/**: Defines MongoDB schemas and models for data structure
+- **routes/**: Contains all API route definitions, organized by feature (admin, user, chat, etc.)
+- **utils/**: Helper functions and utilities used across the application
+- **cacheFiles/**: Directory for storing cached data and temporary files
+
+The application follows a modular architecture where each component (routes, controllers, models) is separated by concern, making the codebase maintainable and scalable.
 
 
