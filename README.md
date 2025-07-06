@@ -74,16 +74,5 @@ neargud/
 └── README.md            # Project documentation
 ```
 
-Each directory serves a specific purpose:
-
-- **config/**: Contains configuration files for database connections, environment variables, and other app settings
-- **constants/**: Stores application-wide constants, enums, and configuration values
-- **controllers/**: Houses the business logic for each route, handling request processing and response generation
-- **middleware/**: Contains custom middleware functions for authentication, validation, error handling, etc.
-- **models/**: Defines MongoDB schemas and models for data structure
-- **routes/**: Contains all API route definitions, organized by feature (admin, user, chat, etc.)
-- **utils/**: Helper functions and utilities used across the application
-- **cacheFiles/**: Directory for storing cached data and temporary files
-
 
 
