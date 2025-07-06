@@ -85,6 +85,5 @@ Each directory serves a specific purpose:
 - **utils/**: Helper functions and utilities used across the application
 - **cacheFiles/**: Directory for storing cached data and temporary files
 
-The application follows a modular architecture where each component (routes, controllers, models) is separated by concern, making the codebase maintainable and scalable.
 
 
