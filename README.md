@@ -15,7 +15,7 @@ This is the backend for the Neargud project. It is a RESTful API built using Exp
 1. Clone the repository.
 2. Install dependencies using `npm install`.
 3. Create a `.env` file (based on `.env.example` if available) and configure your environment variables (e.g. `PORT`, database connection string, etc.).
-4. Start the server using `npm start` or `node index.js`.
+4. Start the server using `npm run dev` or `node index.js`.
 
 ## API Endpoints
 
